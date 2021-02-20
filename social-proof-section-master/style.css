@@ -110,6 +110,17 @@ img {
     margin: 0;
   }
 
+  .ratings {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+  }
+
+  .stars {
+    margin: 0;
+  }
+
   .ratings:nth-of-type(2) {
     transform: translateX(50px);
   }

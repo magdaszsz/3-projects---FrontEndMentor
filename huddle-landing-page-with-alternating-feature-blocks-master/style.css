@@ -221,6 +221,74 @@ h3 {
 .footer {
   color: white;
   background-color: var(--dark-cyan);
-  padding-top: 9em;
+  padding-top: 12em;
 }
+
+.footer__svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(-70px);
+}
+
+.footer__links-list {
+  list-style: none;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: 3em;
+}
+
+.footer__links-list li {
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__socials i {
+  margin-right: 1em;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.footer__container {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  position: relative;
+}
+
+footer div {
+  width: 30%;
+}
+
+.footer__info-list {
+  padding-left: 1.7em;
+}
+
+.footer__info-list li {
+  padding-bottom: 1em;
+}
+
+.footer__info-list li:nth-of-type(1) {
+  list-style-image: url('./images/icon-location.svg');
+}
+
+.footer__info-list li:nth-of-type(2) {
+  list-style-image: url('./images/icon-phone.svg');
+}
+
+.footer__info-list li:nth-of-type(3) {
+  list-style-image: url('./images/icon-email.svg');
+}
+
+
+
+
 

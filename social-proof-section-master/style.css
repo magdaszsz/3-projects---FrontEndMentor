@@ -1,16 +1,13 @@
 :root {
-
 --dark-magenta: hsl(300, 43%, 22%);
 --soft-pink: hsl(333, 80%, 67%);
 --dark-greyish-magenta: hsl(303, 10%, 53%);
 --light-grayish-magenta: hsl(300, 24%, 96%);
-
 }
 
 body {
   font-family: 'Spartan', sans-serif; 
 }
-
 
 * {
   padding: 0;
@@ -33,7 +30,6 @@ body {
   padding: 2em 0;
   font-weight: 500;
 }
-
 
 h1 {
   color: var(--dark-magenta);
@@ -154,7 +150,5 @@ img {
   .testimony__card:nth-of-type(3) {
     transform: translateY(50px);
   }
-
-  
 }
 

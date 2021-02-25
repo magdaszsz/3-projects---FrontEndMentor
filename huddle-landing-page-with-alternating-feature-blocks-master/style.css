@@ -13,6 +13,7 @@ body {
   --pink: hsl(322, 100%, 66%);
   --dark-cyan: hsl(192, 100%, 9%);
   --blue: hsl(208, 11%, 55%);
+  --shadow: rgba(220, 221, 225, .5);
 }
 
 /* hero */
@@ -48,8 +49,8 @@ body {
   background: white;
   width: 200px;
   height: 50px;
-  border: 1px solid rgba(220, 221, 225, .5);
-  box-shadow: 0 3px 15px rgba(220, 221, 225, .5);
+  border: 1px solid var(--shadow);
+  box-shadow: 0 3px 15px var(--shadow);
   margin: 2em;
   position: relative;
   left: 60%;
@@ -127,8 +128,8 @@ body {
   width: 90%;
   margin: 2em auto;
   border-radius: 10px;
-  border: 2px solid rgba(220, 221, 225, .5);
-  box-shadow: 0 3px 15px rgba(220, 221, 225, .5);
+  border: 2px solid var(--shadow);
+  box-shadow: 0 3px 15px var(--shadow);
   color: var(--dark-cyan);
 }
 
@@ -214,9 +215,22 @@ h3 {
   .call-to-action {
     width: 90%;
   }
+
+   .btn-pink {
+    width: 150px;
+    font-size: .9em;
+  }
+
+  .call-to-action__header {
+    font-size: 1.2em;
+  }
 }
 
 /* footer */
+
+.footer__links {
+  border: 2px solid magenta;
+}
 
 .footer {
   color: white;
@@ -233,11 +247,13 @@ h3 {
 
 .footer__links-list {
   list-style: none;
-  height: 60%;
+  height: 150px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   padding-left: 3em;
+  //border: 2px solid white;
+  width: 30%;
 }
 
 .footer__links-list li {
@@ -248,12 +264,14 @@ h3 {
 .footer__socials {
   display: flex;
   justify-content: center;
+  list-style: none;
 }
 
 .footer__socials i {
   margin-right: 1em;
   font-size: 20px;
   cursor: pointer;
+  width: 30%;
 }
 
 .footer__container {
@@ -264,16 +282,14 @@ h3 {
   position: relative;
 }
 
-footer div {
-  width: 30%;
-}
 
 .footer__info-list {
   padding-left: 1.7em;
+  width: 30%;
 }
 
 .footer__info-list li {
-  padding-bottom: 1em;
+  padding-bottom: 1.7em;
 }
 
 .footer__info-list li:nth-of-type(1) {
@@ -286,6 +302,29 @@ footer div {
 
 .footer__info-list li:nth-of-type(3) {
   list-style-image: url('./images/icon-email.svg');
+}
+
+@media (max-width: 500px) {
+  .footer__container {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .footer__links-list {
+    height: 250px;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .footer__info-list {
+    width: 90%;
+  }
+
+  .footer__socials {
+    padding-bottom: 2.5em;
+  }
+
+ 
 }
 
 

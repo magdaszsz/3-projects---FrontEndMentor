@@ -21,6 +21,10 @@
   display: flex;
 }
 
+section {
+  padding: 3em 0;
+}
+
 ul {
   list-style-type: none;
 }
@@ -69,6 +73,97 @@ nav .container {
   border: 3px solid var(--dark-violet);
   color: var(--dark-violet);
 }
+
+/* hero  */ 
+.hero {
+  background-color: var(--dark-violet);
+  padding: 2em 0;
+  color: white;
+}
+
+.hero .container {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid white;
+}
+
+.hero__body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 40%;
+}
+
+.hero__image {
+  max-height: 100%;
+  border: 2px solid cyan;
+  transform: translateY(20%);
+ 
+}
+
+.hero__image img {
+  height: 500px;
+}
+
+/* about */ 
+
+.about .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 3em 0;
+}
+
+.about__header-container {
+  width: 100%;
+}
+
+.about__header {
+  font-size: 3.5rem;
+}
+
+.about__header {
+  //border: 2px solid pink;
+  display: block;
+}
+
+.about__card {
+  //border: 2px solid yellow;
+  width: 30%;
+  padding: 1.5em 1em 1.5em 0;
+}
+
+/* more */
+
+.more .container {
+  background-color: var(--dark-violet);
+  background-image: url(images/bg-pattern-how-we-work-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  color: white;
+  padding: 2.5em 4em;
+  display: flex;
+  border: 2px solid salmon;
+  justify-content: space-between;
+}
+
+.btn {
+  all: initial;
+  color: white;
+  border: 3px solid white;
+  font-family: var(--karla);
+  letter-spacing: .1em;
+  height: 3em;
+  padding: 0 1.2em;
+  align-self: center;
+  justify-self: flex-start;
+}
+
+.more__header {
+  font-size: 2.8rem;
+}
+
+
 
 .footer__about li:first-of-type, 
 .footer__help li:first-of-type, 

@@ -21,3 +21,6 @@ const submitForm = (e) => {
 // });
 
 form.addEventListener("submit", submitForm);
+
+const cont = document.querySelector('.container');
+console.log(getComputedStyle(cont).display)

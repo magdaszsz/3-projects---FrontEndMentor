@@ -14,3 +14,153 @@
   --error: hsl(0, 100%, 63%);
   --neutral-white: hsl(0, 0%, 100%);
 }
+
+body {
+  color: white;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Raleway", sans-serif;
+}
+
+img {
+  max-width: 90%;
+}
+
+/* navigation */
+
+nav {
+  padding: 2em 0;
+  background-color: var(--test-bg);
+}
+
+nav .container {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.nav__list li {
+  margin-right: 1em;
+}
+
+/* footer */
+
+footer {
+  background-color: var(--footer-bg);
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  position: relative;
+  padding: 9em 0 3.5em 0;
+}
+
+.footer__social-list {
+  justify-self: end;
+  display: flex;
+}
+
+.footer .container {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+footer ul {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 1em 0;
+}
+
+footer li {
+  margin-bottom: 0.7em;
+}
+
+.footer__icon {
+  position: absolute;
+  top: 4em;
+}
+
+.footer__contacts-list li:nth-of-type(1) {
+  list-style-image: url(images/icon-phone.svg);
+}
+
+.footer__contacts-list li:nth-of-type(2) {
+  list-style-image: url(images/icon-email.svg);
+}
+
+.footer__location-list {
+  width: 25%;
+  margin-right: 3em;
+}
+
+.footer__location-list li:nth-of-type(1) {
+  list-style-image: url(images/icon-location.svg);
+}
+
+
+
+.footer__links-list-left,
+.footer__links-list-right,
+.footer__contacts-list {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.footer__contacts-list {
+  padding-left: 2em;
+}
+
+.footer__social-list li {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 1em;
+}
+
+.footer__social-list li:hover {
+  color: var(--hover-blue);
+  border-color: var(--hover-blue);
+}
+
+@media (max-width: 600px) {
+  footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  footer {
+    padding-bottom: 1em;
+  }
+}

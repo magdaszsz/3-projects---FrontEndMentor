@@ -85,11 +85,20 @@ section {
 
 .hero {
    background-color: var(--test-bg);
-   background-image: url(images/bg-curvy-desktop.svg);
+   /* background-image: url(images/bg-curvy-desktop.svg);
    background-repeat: no-repeat;
-   background-position: bottom;
+   background-position: bottom; */
    padding-bottom: 6em;
-   background-size: 1700px 300px;
+   //background-size: 1700px 300px;
+   position: relative;
+}
+
+
+.hero__curve {
+  width: 100%; 
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
 }
 
 .hero__image img {
@@ -100,7 +109,7 @@ section {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  border: 2px solid yellow;
+
  
 }
 
@@ -108,6 +117,7 @@ section {
   text-align: center;
   width: min(500px, 80%);
   margin-top: 2em;
+  z-index: 10;
 }
 
 .hero__text {
@@ -117,12 +127,25 @@ section {
 @media (max-width: 600px) {
   .hero__image img {
     max-width: 90%;
+    z-index: 100;
+  }
+
+  .cards {
+    padding-top: 10em;
+  }
+
+  .hero__body {
+    position: relative;
+    
+  }
+
+  .cards {
+    padding-top: 300px;
   }
 
   .hero {
-    background-image: url(images/bg-curvy-mobile.svg);
-    background-size: auto;
-    background-position: 0 200px;
+    padding-bottom: 0;
+    height: 330px;
   }
 }
 

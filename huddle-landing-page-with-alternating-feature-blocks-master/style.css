@@ -111,6 +111,16 @@ img {
   height: 500px;
 }
 
+.reveal {
+  transition: all .5s ease-in;
+}
+
+.hidden {
+  transform: translateY(40px);
+  opacity: 0;
+}
+
+
 @media (max-width: 500px) {
   .btn-white {
     width: 100px;
@@ -282,6 +292,7 @@ h3 {
   color: white;
   background-color: var(--dark-cyan);
   padding-top: 14em;
+  overflow: hidden;
 }
 
 .footer__svg {
@@ -387,4 +398,3 @@ h3 {
     padding-bottom: 2.5em;
   }
 }
-
